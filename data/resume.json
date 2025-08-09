@@ -11,7 +11,7 @@
     {
       "title": "Senior Full-Stack Developer",
       "company": "Company Name",
-      "location": "Stockholm, Sweden", 
+      "location": "Stockholm, Sweden",
       "startDate": "2023-01",
       "endDate": null,
       "current": true,
@@ -40,7 +40,7 @@
       "level": "Native"
     },
     {
-      "name": "Swedish", 
+      "name": "Swedish",
       "level": "Fluent"
     },
     {

@@ -56,7 +56,7 @@ This project is currently in development. Follow the implementation phases:
 
 ### Phase 2: 🔄 UI Kit
 - [ ] Build atomic components (buttons, inputs, etc.)
-- [ ] Create composite components (navbar, cards, etc.)  
+- [ ] Create composite components (navbar, cards, etc.)
 - [ ] Develop page blocks (hero, project grid, etc.)
 
 ### Phase 3: 🔄 Website Implementation
@@ -81,7 +81,7 @@ This project is currently in development. Follow the implementation phases:
 Each phase is developed in separate branches with pull requests for review:
 
 - `phase-0/*` - Repository setup and configuration
-- `phase-1/*` - Design system implementation  
+- `phase-1/*` - Design system implementation
 - `phase-2/*` - UI Kit development
 - `phase-3/*` - Website application
 - `phase-4/*` - Content and optimization

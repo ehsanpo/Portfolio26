@@ -6,7 +6,7 @@ permalink: cottex
 author: Ehsan
 type: portfolio
 id: 199
-agency: Guts & Glory
+agency: "Guts & Glory"
 category:
   - Front-end
   - Backend
