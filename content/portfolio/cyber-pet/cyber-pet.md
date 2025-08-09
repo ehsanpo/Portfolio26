@@ -45,4 +45,4 @@ The goal was to build an engaging educational simulation game that immerses user
 
 <br />
 <h2>Outcome:</h2>
-Cyper-pet successfully brought together gamification and educational value in a cohesive, modern platform. It not only offered an engaging digital pet experience but also encouraged players to learn tangible skills in a fun, low-pressure environment. The project stood out as a demonstration of how technology and creativity can intersect to build meaningful interactive experiences.
+Cyber-pet successfully brought together gamification and educational value in a cohesive, modern platform. It not only offered an engaging digital pet experience but also encouraged players to learn tangible skills in a fun, low-pressure environment. The project stood out as a demonstration of how technology and creativity can intersect to build meaningful interactive experiences.
