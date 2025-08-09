@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio26 Design System Demo</title>
+  <link rel="stylesheet" href="./base.css">
+  <style>
+    /* Demo-specific styles */
+    .demo-section {
+      margin-block: var(--spacing-12);
+      padding: var(--spacing-8);
+      border: 1px solid var(--border-primary);
+      border-radius: var(--border-radius-lg);
+      background-color: var(--surface-secondary);
+    }
+    
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--spacing-4);
+      margin-block: var(--spacing-6);
+    }
+    
+    .color-swatch {
+      height: 60px;
+      border-radius: var(--border-radius-md);
+      border: 1px solid var(--border-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-inverse);
+      font-weight: var(--font-weight-bold);
+      font-size: var(--font-size-sm);
+    }
+    
+    .theme-toggle {
+      position: fixed;
+      top: var(--spacing-4);
+      right: var(--spacing-4);
+      background: var(--interactive-primary);
+      color: var(--text-inverse);
+      border: none;
+      padding: var(--spacing-2) var(--spacing-4);
+      border-radius: var(--border-radius-md);
+      cursor: pointer;
+      font-weight: var(--font-weight-medium);
+      transition: var(--transition-colors);
+    }
+    
+    .theme-toggle:hover {
+      background: var(--interactive-primary-hover);
+    }
+    
+    .rtl-toggle {
+      position: fixed;
+      top: var(--spacing-4);
+      right: var(--spacing-24);
+      background: var(--interactive-secondary);
+      color: var(--text-primary);
+      border: 1px solid var(--border-primary);
+      padding: var(--spacing-2) var(--spacing-4);
+      border-radius: var(--border-radius-md);
+      cursor: pointer;
+      font-weight: var(--font-weight-medium);
+      transition: var(--transition-colors);
+    }
+    
+    .rtl-toggle:hover {
+      background: var(--interactive-secondary-hover);
+    }
+    
+    .button {
+      background-color: var(--interactive-primary);
+      color: var(--text-inverse);
+      border: none;
+      border-radius: var(--border-radius-md);
+      padding: var(--spacing-3) var(--spacing-6);
+      font-size: var(--font-size-base);
+      font-weight: var(--font-weight-medium);
+      cursor: pointer;
+      transition: var(--transition-colors);
+      margin-inline-end: var(--spacing-2);
+      margin-block-end: var(--spacing-2);
+    }
+    
+    .button:hover {
+      background-color: var(--interactive-primary-hover);
+    }
+    
+    .button-secondary {
+      background-color: var(--interactive-secondary);
+      color: var(--text-primary);
+      border: 1px solid var(--border-primary);
+    }
+    
+    .button-secondary:hover {
+      background-color: var(--interactive-secondary-hover);
+    }
+    
+    .card {
+      background-color: var(--surface-elevated);
+      border: 1px solid var(--border-primary);
+      border-radius: var(--border-radius-lg);
+      padding: var(--spacing-6);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .form-group {
+      margin-block-end: var(--spacing-4);
+    }
+    
+    .form-label {
+      display: block;
+      font-weight: var(--font-weight-medium);
+      margin-block-end: var(--spacing-2);
+      color: var(--text-primary);
+    }
+    
+    .form-input {
+      width: 100%;
+      padding: var(--spacing-3);
+      border: 1px solid var(--border-primary);
+      border-radius: var(--border-radius-md);
+      background-color: var(--surface-primary);
+      color: var(--text-primary);
+      font-size: var(--font-size-base);
+      transition: var(--transition-colors);
+    }
+    
+    .form-input:focus {
+      outline: 2px solid var(--focus-ring);
+      outline-offset: 2px;
+      border-color: var(--border-brand);
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
+  <button class="rtl-toggle" onclick="toggleRTL()">🔄 Toggle RTL</button>
+  
+  <div class="container container-4xl">
+    <header style="text-align: center; margin-block: var(--spacing-12);">
+      <h1>Portfolio26 Design System</h1>
+      <p class="text-lead">A modern, accessible, and multilingual design foundation</p>
+    </header>
+    
+    <!-- Typography Section -->
+    <section class="demo-section">
+      <h2>Typography Scale</h2>
+      <h1>Heading 1 - The quick brown fox</h1>
+      <h2>Heading 2 - The quick brown fox</h2>
+      <h3>Heading 3 - The quick brown fox</h3>
+      <h4>Heading 4 - The quick brown fox</h4>
+      <h5>Heading 5 - The quick brown fox</h5>
+      <h6>Heading 6 - The quick brown fox</h6>
+      <p class="text-lead">Lead text - Large, important text that draws attention</p>
+      <p>Body text - Regular paragraph text for content and descriptions</p>
+      <p class="text-small">Small text - Supporting information and captions</p>
+      <p class="text-xs">Extra small text - Fine print and metadata</p>
+      <code>Code text - Monospace font for code snippets</code>
+    </section>
+    
+    <!-- Color System -->
+    <section class="demo-section">
+      <h2>Color System</h2>
+      <h3>Brand Colors</h3>
+      <div class="demo-grid">
+        <div class="color-swatch" style="background-color: var(--color-primary-500);">Primary</div>
+        <div class="color-swatch" style="background-color: var(--color-success-500);">Success</div>
+        <div class="color-swatch" style="background-color: var(--color-warning-500);">Warning</div>
+        <div class="color-swatch" style="background-color: var(--color-error-500);">Error</div>
+        <div class="color-swatch" style="background-color: var(--color-info-500);">Info</div>
+      </div>
+      
+      <h3>Semantic Colors</h3>
+      <div class="demo-grid">
+        <div style="background-color: var(--surface-primary); padding: var(--spacing-4); border: 1px solid var(--border-primary); border-radius: var(--border-radius-md);">
+          <strong>Surface Primary</strong><br>
+          <span style="color: var(--text-primary);">Primary Text</span><br>
+          <span style="color: var(--text-secondary);">Secondary Text</span><br>
+          <span style="color: var(--text-tertiary);">Tertiary Text</span>
+        </div>
+        <div style="background-color: var(--surface-secondary); padding: var(--spacing-4); border: 1px solid var(--border-primary); border-radius: var(--border-radius-md);">
+          <strong>Surface Secondary</strong><br>
+          <span style="color: var(--text-brand);">Brand Text</span><br>
+          <span style="color: var(--text-success);">Success Text</span><br>
+          <span style="color: var(--text-error);">Error Text</span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Spacing System -->
+    <section class="demo-section">
+      <h2>Spacing System</h2>
+      <div style="display: flex; align-items: flex-end; gap: var(--spacing-2); margin-block: var(--spacing-6);">
+        <div style="width: var(--spacing-4); height: var(--spacing-4); background: var(--color-primary-500);"></div>
+        <div style="width: var(--spacing-8); height: var(--spacing-8); background: var(--color-primary-500);"></div>
+        <div style="width: var(--spacing-12); height: var(--spacing-12); background: var(--color-primary-500);"></div>
+        <div style="width: var(--spacing-16); height: var(--spacing-16); background: var(--color-primary-500);"></div>
+        <div style="width: var(--spacing-20); height: var(--spacing-20); background: var(--color-primary-500);"></div>
+        <div style="width: var(--spacing-24); height: var(--spacing-24); background: var(--color-primary-500);"></div>
+      </div>
+      <p class="text-small">Spacing scale: 4px, 8px, 12px, 16px, 20px, 24px (and more)</p>
+    </section>
+    
+    <!-- Interactive Elements -->
+    <section class="demo-section">
+      <h2>Interactive Elements</h2>
+      <div style="margin-block: var(--spacing-6);">
+        <button class="button">Primary Button</button>
+        <button class="button button-secondary">Secondary Button</button>
+        <a href="#" style="margin-inline-start: var(--spacing-4);">Text Link</a>
+      </div>
+    </section>
+    
+    <!-- Form Elements -->
+    <section class="demo-section">
+      <h2>Form Elements</h2>
+      <div class="card" style="max-width: 400px;">
+        <div class="form-group">
+          <label class="form-label" for="name">Name</label>
+          <input class="form-input" type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-input" id="message" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+        <button class="button">Submit Form</button>
+      </div>
+    </section>
+    
+    <!-- RTL Demo -->
+    <section class="demo-section">
+      <h2>RTL Support Demo</h2>
+      <div style="margin-block: var(--spacing-6);">
+        <p>English text: The quick brown fox jumps over the lazy dog.</p>
+        <p lang="fa" dir="rtl" style="font-family: var(--font-family-sans);">
+          متن فارسی: این یک متن نمونه به زبان فارسی است که از راست به چپ نوشته می‌شود.
+        </p>
+        <p lang="ar" dir="rtl" style="font-family: var(--font-family-sans);">
+          النص العربي: هذا نص تجريبي باللغة العربية يُكتب من اليمين إلى اليسار.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Shadow System -->
+    <section class="demo-section">
+      <h2>Shadow System</h2>
+      <div class="demo-grid">
+        <div style="padding: var(--spacing-4); background: var(--surface-elevated); border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm);">Small Shadow</div>
+        <div style="padding: var(--spacing-4); background: var(--surface-elevated); border-radius: var(--border-radius-md); box-shadow: var(--shadow-base);">Base Shadow</div>
+        <div style="padding: var(--spacing-4); background: var(--surface-elevated); border-radius: var(--border-radius-md); box-shadow: var(--shadow-lg);">Large Shadow</div>
+        <div style="padding: var(--spacing-4); background: var(--surface-elevated); border-radius: var(--border-radius-md); box-shadow: var(--shadow-xl);">Extra Large Shadow</div>
+      </div>
+    </section>
+  </div>
+  
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      
+      const button = document.querySelector('.theme-toggle');
+      button.textContent = newTheme === 'dark' ? '☀️ Toggle Theme' : '🌙 Toggle Theme';
+    }
+    
+    function toggleRTL() {
+      const html = document.documentElement;
+      const currentDir = html.getAttribute('dir');
+      const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
+      const newLang = newDir === 'rtl' ? 'fa' : 'en';
+      
+      html.setAttribute('dir', newDir);
+      html.setAttribute('lang', newLang);
+      
+      const button = document.querySelector('.rtl-toggle');
+      button.textContent = newDir === 'rtl' ? '🔄 Toggle LTR' : '🔄 Toggle RTL';
+    }
+  </script>
+</body>
+</html>

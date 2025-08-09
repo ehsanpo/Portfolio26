@@ -1,0 +1,229 @@
+/* Theme System - Light & Dark Mode */
+/* Portfolio26 - Semantic Color Tokens */
+
+:root {
+  /* === LIGHT THEME (DEFAULT) === */
+  
+  /* Surface Colors */
+  --surface-primary: var(--color-neutral-0);
+  --surface-secondary: var(--color-neutral-50);
+  --surface-tertiary: var(--color-neutral-100);
+  --surface-elevated: var(--color-neutral-0);
+  --surface-overlay: var(--color-neutral-0);
+  --surface-brand: var(--color-primary-500);
+  
+  /* Text Colors */
+  --text-primary: var(--color-neutral-900);
+  --text-secondary: var(--color-neutral-700);
+  --text-tertiary: var(--color-neutral-500);
+  --text-quaternary: var(--color-neutral-400);
+  --text-disabled: var(--color-neutral-300);
+  --text-inverse: var(--color-neutral-0);
+  --text-brand: var(--color-primary-600);
+  --text-success: var(--color-success-600);
+  --text-warning: var(--color-warning-600);
+  --text-error: var(--color-error-600);
+  --text-info: var(--color-info-600);
+  
+  /* Border Colors */
+  --border-primary: var(--color-neutral-200);
+  --border-secondary: var(--color-neutral-300);
+  --border-tertiary: var(--color-neutral-400);
+  --border-brand: var(--color-primary-500);
+  --border-success: var(--color-success-500);
+  --border-warning: var(--color-warning-500);
+  --border-error: var(--color-error-500);
+  --border-info: var(--color-info-500);
+  
+  /* Interactive Colors */
+  --interactive-primary: var(--color-primary-500);
+  --interactive-primary-hover: var(--color-primary-600);
+  --interactive-primary-active: var(--color-primary-700);
+  --interactive-primary-disabled: var(--color-neutral-300);
+  
+  --interactive-secondary: var(--color-neutral-100);
+  --interactive-secondary-hover: var(--color-neutral-200);
+  --interactive-secondary-active: var(--color-neutral-300);
+  
+  --interactive-ghost: transparent;
+  --interactive-ghost-hover: var(--color-neutral-100);
+  --interactive-ghost-active: var(--color-neutral-200);
+  
+  /* Focus & States */
+  --focus-ring: var(--color-primary-500);
+  --focus-ring-offset: var(--color-neutral-0);
+  
+  /* Overlays */
+  --overlay-backdrop: rgba(0, 0, 0, 0.5);
+  --overlay-scrim: rgba(0, 0, 0, 0.1);
+}
+
+/* === DARK THEME === */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Surface Colors */
+    --surface-primary: var(--color-neutral-950);
+    --surface-secondary: var(--color-neutral-900);
+    --surface-tertiary: var(--color-neutral-800);
+    --surface-elevated: var(--color-neutral-900);
+    --surface-overlay: var(--color-neutral-800);
+    --surface-brand: var(--color-primary-600);
+    
+    /* Text Colors */
+    --text-primary: var(--color-neutral-50);
+    --text-secondary: var(--color-neutral-300);
+    --text-tertiary: var(--color-neutral-400);
+    --text-quaternary: var(--color-neutral-500);
+    --text-disabled: var(--color-neutral-600);
+    --text-inverse: var(--color-neutral-950);
+    --text-brand: var(--color-primary-400);
+    --text-success: var(--color-success-500);
+    --text-warning: var(--color-warning-500);
+    --text-error: var(--color-error-500);
+    --text-info: var(--color-info-500);
+    
+    /* Border Colors */
+    --border-primary: var(--color-neutral-800);
+    --border-secondary: var(--color-neutral-700);
+    --border-tertiary: var(--color-neutral-600);
+    --border-brand: var(--color-primary-600);
+    --border-success: var(--color-success-600);
+    --border-warning: var(--color-warning-600);
+    --border-error: var(--color-error-600);
+    --border-info: var(--color-info-600);
+    
+    /* Interactive Colors */
+    --interactive-primary: var(--color-primary-600);
+    --interactive-primary-hover: var(--color-primary-500);
+    --interactive-primary-active: var(--color-primary-400);
+    --interactive-primary-disabled: var(--color-neutral-700);
+    
+    --interactive-secondary: var(--color-neutral-800);
+    --interactive-secondary-hover: var(--color-neutral-700);
+    --interactive-secondary-active: var(--color-neutral-600);
+    
+    --interactive-ghost: transparent;
+    --interactive-ghost-hover: var(--color-neutral-800);
+    --interactive-ghost-active: var(--color-neutral-700);
+    
+    /* Focus & States */
+    --focus-ring: var(--color-primary-400);
+    --focus-ring-offset: var(--color-neutral-950);
+    
+    /* Overlays */
+    --overlay-backdrop: rgba(0, 0, 0, 0.8);
+    --overlay-scrim: rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Force Dark Theme */
+[data-theme="dark"] {
+  /* Surface Colors */
+  --surface-primary: var(--color-neutral-950);
+  --surface-secondary: var(--color-neutral-900);
+  --surface-tertiary: var(--color-neutral-800);
+  --surface-elevated: var(--color-neutral-900);
+  --surface-overlay: var(--color-neutral-800);
+  --surface-brand: var(--color-primary-600);
+  
+  /* Text Colors */
+  --text-primary: var(--color-neutral-50);
+  --text-secondary: var(--color-neutral-300);
+  --text-tertiary: var(--color-neutral-400);
+  --text-quaternary: var(--color-neutral-500);
+  --text-disabled: var(--color-neutral-600);
+  --text-inverse: var(--color-neutral-950);
+  --text-brand: var(--color-primary-400);
+  --text-success: var(--color-success-500);
+  --text-warning: var(--color-warning-500);
+  --text-error: var(--color-error-500);
+  --text-info: var(--color-info-500);
+  
+  /* Border Colors */
+  --border-primary: var(--color-neutral-800);
+  --border-secondary: var(--color-neutral-700);
+  --border-tertiary: var(--color-neutral-600);
+  --border-brand: var(--color-primary-600);
+  --border-success: var(--color-success-600);
+  --border-warning: var(--color-warning-600);
+  --border-error: var(--color-error-600);
+  --border-info: var(--color-info-600);
+  
+  /* Interactive Colors */
+  --interactive-primary: var(--color-primary-600);
+  --interactive-primary-hover: var(--color-primary-500);
+  --interactive-primary-active: var(--color-primary-400);
+  --interactive-primary-disabled: var(--color-neutral-700);
+  
+  --interactive-secondary: var(--color-neutral-800);
+  --interactive-secondary-hover: var(--color-neutral-700);
+  --interactive-secondary-active: var(--color-neutral-600);
+  
+  --interactive-ghost: transparent;
+  --interactive-ghost-hover: var(--color-neutral-800);
+  --interactive-ghost-active: var(--color-neutral-700);
+  
+  /* Focus & States */
+  --focus-ring: var(--color-primary-400);
+  --focus-ring-offset: var(--color-neutral-950);
+  
+  /* Overlays */
+  --overlay-backdrop: rgba(0, 0, 0, 0.8);
+  --overlay-scrim: rgba(0, 0, 0, 0.3);
+}
+
+/* Force Light Theme */
+[data-theme="light"] {
+  /* Surface Colors */
+  --surface-primary: var(--color-neutral-0);
+  --surface-secondary: var(--color-neutral-50);
+  --surface-tertiary: var(--color-neutral-100);
+  --surface-elevated: var(--color-neutral-0);
+  --surface-overlay: var(--color-neutral-0);
+  --surface-brand: var(--color-primary-500);
+  
+  /* Text Colors */
+  --text-primary: var(--color-neutral-900);
+  --text-secondary: var(--color-neutral-700);
+  --text-tertiary: var(--color-neutral-500);
+  --text-quaternary: var(--color-neutral-400);
+  --text-disabled: var(--color-neutral-300);
+  --text-inverse: var(--color-neutral-0);
+  --text-brand: var(--color-primary-600);
+  --text-success: var(--color-success-600);
+  --text-warning: var(--color-warning-600);
+  --text-error: var(--color-error-600);
+  --text-info: var(--color-info-600);
+  
+  /* Border Colors */
+  --border-primary: var(--color-neutral-200);
+  --border-secondary: var(--color-neutral-300);
+  --border-tertiary: var(--color-neutral-400);
+  --border-brand: var(--color-primary-500);
+  --border-success: var(--color-success-500);
+  --border-warning: var(--color-warning-500);
+  --border-error: var(--color-error-500);
+  --border-info: var(--color-info-500);
+  
+  /* Interactive Colors */
+  --interactive-primary: var(--color-primary-500);
+  --interactive-primary-hover: var(--color-primary-600);
+  --interactive-primary-active: var(--color-primary-700);
+  --interactive-primary-disabled: var(--color-neutral-300);
+  
+  --interactive-secondary: var(--color-neutral-100);
+  --interactive-secondary-hover: var(--color-neutral-200);
+  --interactive-secondary-active: var(--color-neutral-300);
+  
+  --interactive-ghost: transparent;
+  --interactive-ghost-hover: var(--color-neutral-100);
+  --interactive-ghost-active: var(--color-neutral-200);
+  
+  /* Focus & States */
+  --focus-ring: var(--color-primary-500);
+  --focus-ring-offset: var(--color-neutral-0);
+  
+  /* Overlays */
+  --overlay-backdrop: rgba(0, 0, 0, 0.5);
+  --overlay-scrim: rgba(0, 0, 0, 0.1);
+}

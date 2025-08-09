@@ -166,7 +166,7 @@ _Last updated:_ 2025-08-09 (Europe/Stockholm)
 ## High-level TODOs
 
 - [x] Phase 0: Create repo, folders, and base config.
-- [ ] Phase 1: Establish **CSS variable tokens** (no Tailwind).
+- [x] Phase 1: Establish **CSS variable tokens** (no Tailwind).
 - [ ] Phase 2: Build ui kit (atoms → components → blocks).
 - [ ] Phase 3: Generate website pages/sections from `Doc/Sitemap.json`; content from `/content`; data from `/data`.
 - [ ] Phase 4: Performance, a11y, SEO pass.
@@ -177,6 +177,7 @@ _Last updated:_ 2025-08-09 (Europe/Stockholm)
 - [x] Initialize Next.js (TypeScript) app in `website/` with i18n locales (en, sv, fa).
 - [x] Add PostCSS + CSS Modules; create `design system/tokens.css` with LTR/RTL-aware vars.
 - [x] Scaffold `ui kit/atoms`, `ui kit/components`, `ui kit/blocks` with index files.
+- [x] **Design System Foundation**: Complete CSS variable system with themes, RTL support, and accessibility features.
 - [ ] **Implement Block Registry**: `section.type` → component in `ui kit/blocks`.
 - [ ] **Build Sitemap Parser**: read `Doc/Sitemap.json`, create routes, and render sections.
 - [ ] **Content pipeline**: parse `/content/**/<slug>.md` with co-located images; generate slugs and indexes.
@@ -193,6 +194,7 @@ _Last updated:_ 2025-08-09 (Europe/Stockholm)
 - 2025-08-09: Switched to CSS Modules (no Tailwind). Content now lives in `/content` with co-located images; `/data` holds `portfolio.json` + `resume.json`.
 - 2025-08-09: Added i18n (en, sv, fa) + auto-translation pipeline and RTL support.
 - 2025-08-09: **Phase 0 completed** - Repository structure created, folders scaffolded, basic configuration files added, sample content created.
+- 2025-08-09: **Phase 1 completed** - Design system foundation implemented with comprehensive CSS variables, theme system (light/dark), RTL support, accessibility features, and documentation with live demo.
 ```
 
 ---
