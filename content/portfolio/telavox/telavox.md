@@ -39,7 +39,7 @@ client: "Telavox"
 
 <h3>Project 1: Visual Refresh and RTL Support</h3>
 
-<p>The primary goal of this project was to update the design of our application with a modern, sleek interface and to introduce Right-to-Left (RTL) support for the Arabic language. This involved a complete rewrite of the aspplication in TypeScript, as well as addressing technical debt by migrating from MUI4 to Tailwind CSS.</p>
+<p>The primary goal of this project was to update the design of our application with a modern, sleek interface and to introduce Right-to-Left (RTL) support for the Arabic language. This involved a complete rewrite of the application in TypeScript, as well as addressing technical debt by migrating from MUI4 to Tailwind CSS.</p>
 
 <h3>Key Responsibilities:</h3>
 
