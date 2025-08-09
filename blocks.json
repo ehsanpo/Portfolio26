@@ -1,0 +1,28 @@
+{
+  "/home": [
+    "introduction Home",
+    "Featured Work",
+    "Stacks",
+    "Certifications",
+    "What People Say",
+    "Awards",
+    "Trusted By",
+    "Latest Blog Posts"
+  ],
+  "/skills": [
+    "Stacks",
+    "skill chart",
+    "tech timeline",
+    "development tools",
+    "development prosess",
+    "Certifications"
+  ],
+  "/about": [
+    "about me",
+    "My Work story with example project linked too.",
+    "section - Background",
+    "section - Philosophy",
+    "section - Motivators",
+    "section - It's Always Time for Tea"
+  ]
+}
