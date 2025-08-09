@@ -54,4 +54,3 @@ port_date:
     The development of the Holy Green Salad Bar website and app showcased the successful collaboration between our team, a digital designer, and Leeroy. Through the rebranding process, we crafted a fresh visual identity that reflected the essence of Holy Green. The website and app became essential touchpoints for customers, providing an intuitive and convenient platform to engage with the brand, explore the menu, and place orders. This project not only demonstrated our expertise in website development but also highlighted the value of collaboration in delivering a seamless user experience across multiple digital platforms.
   </p>
 </body>
-</html>
