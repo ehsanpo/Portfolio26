@@ -9,7 +9,7 @@
   --spacing-inline-end: var(--spacing-0);
   --spacing-block-start: var(--spacing-0);
   --spacing-block-end: var(--spacing-0);
-  
+
   /* Border radius - direction aware */
   --border-radius-start-start: var(--border-radius-base);
   --border-radius-start-end: var(--border-radius-base);
@@ -221,10 +221,10 @@
 [dir="rtl"]:lang(ar) {
   /* Better line height for Arabic script */
   line-height: var(--line-height-relaxed);
-  
+
   /* Improved letter spacing */
   letter-spacing: var(--letter-spacing-normal);
-  
+
   /* RTL-specific font stacks for Persian */
   --font-family-sans: 'Vazirmatn', 'Tahoma', 'Persian Modern', Arial, sans-serif;
   --font-family-serif: 'Amiri', 'Persian Naskh', Georgia, serif;
