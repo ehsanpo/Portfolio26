@@ -1,0 +1,309 @@
+/* RTL Support - Right-to-Left Language Support */
+/* Portfolio26 - Persian (Farsi) Language Support */
+
+/* === RTL-AWARE LOGICAL PROPERTIES === */
+
+:root {
+  /* Direction-aware spacing utilities */
+  --spacing-inline-start: var(--spacing-0);
+  --spacing-inline-end: var(--spacing-0);
+  --spacing-block-start: var(--spacing-0);
+  --spacing-block-end: var(--spacing-0);
+
+  /* Border radius - direction aware */
+  --border-radius-start-start: var(--border-radius-base);
+  --border-radius-start-end: var(--border-radius-base);
+  --border-radius-end-start: var(--border-radius-base);
+  --border-radius-end-end: var(--border-radius-base);
+}
+
+/* === BASE RTL STYLES === */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="ltr"] {
+  direction: ltr;
+  text-align: left;
+}
+
+/* === RTL UTILITY CLASSES === */
+
+/* Text alignment utilities */
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+/* Margin utilities - logical properties */
+.margin-inline-start-auto {
+  margin-inline-start: auto;
+}
+
+.margin-inline-end-auto {
+  margin-inline-end: auto;
+}
+
+.margin-inline-auto {
+  margin-inline: auto;
+}
+
+/* Padding utilities - logical properties */
+.padding-inline-1 {
+  padding-inline: var(--spacing-1);
+}
+
+.padding-inline-2 {
+  padding-inline: var(--spacing-2);
+}
+
+.padding-inline-3 {
+  padding-inline: var(--spacing-3);
+}
+
+.padding-inline-4 {
+  padding-inline: var(--spacing-4);
+}
+
+.padding-inline-5 {
+  padding-inline: var(--spacing-5);
+}
+
+.padding-inline-6 {
+  padding-inline: var(--spacing-6);
+}
+
+.padding-inline-8 {
+  padding-inline: var(--spacing-8);
+}
+
+.padding-inline-12 {
+  padding-inline: var(--spacing-12);
+}
+
+.padding-inline-16 {
+  padding-inline: var(--spacing-16);
+}
+
+/* Block spacing */
+.padding-block-1 {
+  padding-block: var(--spacing-1);
+}
+
+.padding-block-2 {
+  padding-block: var(--spacing-2);
+}
+
+.padding-block-3 {
+  padding-block: var(--spacing-3);
+}
+
+.padding-block-4 {
+  padding-block: var(--spacing-4);
+}
+
+.padding-block-5 {
+  padding-block: var(--spacing-5);
+}
+
+.padding-block-6 {
+  padding-block: var(--spacing-6);
+}
+
+.padding-block-8 {
+  padding-block: var(--spacing-8);
+}
+
+.padding-block-12 {
+  padding-block: var(--spacing-12);
+}
+
+.padding-block-16 {
+  padding-block: var(--spacing-16);
+}
+
+/* === RTL-SPECIFIC COMPONENT ADJUSTMENTS === */
+
+/* Navigation adjustments */
+[dir="rtl"] .nav-item {
+  margin-inline-start: var(--spacing-0);
+  margin-inline-end: var(--spacing-4);
+}
+
+[dir="ltr"] .nav-item {
+  margin-inline-start: var(--spacing-4);
+  margin-inline-end: var(--spacing-0);
+}
+
+/* Button icon positioning */
+[dir="rtl"] .btn-icon-start {
+  margin-inline-start: var(--spacing-2);
+  margin-inline-end: var(--spacing-0);
+}
+
+[dir="rtl"] .btn-icon-end {
+  margin-inline-start: var(--spacing-0);
+  margin-inline-end: var(--spacing-2);
+}
+
+[dir="ltr"] .btn-icon-start {
+  margin-inline-start: var(--spacing-0);
+  margin-inline-end: var(--spacing-2);
+}
+
+[dir="ltr"] .btn-icon-end {
+  margin-inline-start: var(--spacing-2);
+  margin-inline-end: var(--spacing-0);
+}
+
+/* Card and layout adjustments */
+[dir="rtl"] .card-header {
+  text-align: right;
+}
+
+[dir="ltr"] .card-header {
+  text-align: left;
+}
+
+/* Form adjustments */
+[dir="rtl"] .form-label {
+  text-align: right;
+}
+
+[dir="ltr"] .form-label {
+  text-align: left;
+}
+
+/* Dropdown and modal positioning */
+[dir="rtl"] .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+[dir="ltr"] .dropdown-menu {
+  left: 0;
+  right: auto;
+}
+
+/* === ICON TRANSFORMATIONS === */
+
+/* Icons that need to be flipped in RTL */
+[dir="rtl"] .icon-arrow-right {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .icon-arrow-left {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .icon-chevron-right {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .icon-chevron-left {
+  transform: scaleX(-1);
+}
+
+/* Icons that should NOT be flipped */
+[dir="rtl"] .icon-no-flip {
+  transform: none;
+}
+
+/* === TYPOGRAPHY ADJUSTMENTS === */
+
+/* Persian/Arabic text improvements */
+[dir="rtl"]:lang(fa),
+[dir="rtl"]:lang(ar) {
+  /* Better line height for Arabic script */
+  line-height: var(--line-height-relaxed);
+
+  /* Improved letter spacing */
+  letter-spacing: var(--letter-spacing-normal);
+
+  /* RTL-specific font stacks for Persian */
+  --font-family-sans: 'Vazirmatn', 'Tahoma', 'Persian Modern', Arial, sans-serif;
+  --font-family-serif: 'Amiri', 'Persian Naskh', Georgia, serif;
+}
+
+/* === LAYOUT ADJUSTMENTS === */
+
+/* Grid and flexbox adjustments */
+[dir="rtl"] .flex-row {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .flex-row-reverse {
+  flex-direction: row;
+}
+
+/* Text input and form elements */
+[dir="rtl"] input[type="text"],
+[dir="rtl"] input[type="email"],
+[dir="rtl"] input[type="password"],
+[dir="rtl"] input[type="search"],
+[dir="rtl"] textarea {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] input[type="number"],
+[dir="rtl"] input[type="tel"] {
+  text-align: left;
+  direction: ltr;
+}
+
+/* === ANIMATION ADJUSTMENTS === */
+
+/* Slide transitions need to be reversed */
+[dir="rtl"] .slide-enter-from-right {
+  transform: translateX(-100%);
+}
+
+[dir="rtl"] .slide-enter-from-left {
+  transform: translateX(100%);
+}
+
+[dir="ltr"] .slide-enter-from-right {
+  transform: translateX(100%);
+}
+
+[dir="ltr"] .slide-enter-from-left {
+  transform: translateX(-100%);
+}
+
+/* === ACCESSIBILITY IMPROVEMENTS === */
+
+/* Ensure proper contrast in RTL */
+[dir="rtl"] *:focus {
+  outline-offset: 2px;
+}
+
+/* Improve readability for RTL text */
+[dir="rtl"] p,
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  text-align: right;
+}
+
+/* === PERSIAN LANGUAGE SPECIFIC === */
+
+/* Persian numbering */
+[lang="fa"] .number {
+  font-feature-settings: "locl";
+}
+
+/* Persian calendar and date formatting */
+[lang="fa"] time,
+[lang="fa"] .date {
+  direction: rtl;
+  unicode-bidi: embed;
+}
